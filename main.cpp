@@ -1,9 +1,12 @@
 #include <QApplication>
-#include "MaFenetre.h"
-int main(int argc, char* argv[])
+#include "mafenetre.h"
+
+int main(int argc, char** argv)
 {
     QApplication app(argc, argv);
-    MaFenetre fenetre;
-    fenetre.show();
+
+    MaFenetre mafenetre(nullptr);
+    mafenetre.show();
+
     return app.exec();
 }
