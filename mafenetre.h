@@ -7,10 +7,14 @@
 #include <QComboBox>
 #include <QLineEdit>
 #include <QTableWidget>
+#include <QHeaderView>
+#include <QMessageBox>
+
 
 #include <map>
 #include <vector>
 #include <set>
+
 
 #include "charger_csv.h"
 
@@ -44,7 +48,6 @@ private:
     QComboBox* m_com;
     QComboBox* m_com1;
     QComboBox* m_com2;
-    QString m_couleur;
 
     QTableWidget* m_tab;
 
@@ -52,7 +55,8 @@ private:
     CMatString m_mat;
 
     std::map<std::string, double> m_freqMaladie;
-    std::set<std::string> m_maladies;
+    std::set<std::string> m_valeursMaladies; // noms possibles de maladies
+
 };
 
 #endif // MAFENETRE_H
